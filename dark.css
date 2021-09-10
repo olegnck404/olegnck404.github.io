@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+body {
+    margin: 0;
+    background-color: #383838;
+    background-image: url();
+    font-family: 'Quicksand', sans-serif;
+    line-height: 2;
+    font-size: 20px;
+    color: white;
+}
+
+.lol {
+    font-size: 40px;
+    text-align: center;
+}
+
+.card {
+    width: auto;
+    height: 2000px;
+    margin: 30px auto;
+    padding: 50px;
+    background-color: #1c1c1c;
+    border-radius: 40px;
+    box-shadow: 0 5px 33px #000;
+    color: white;
+}
+
+.card-photo {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: 0 0px 40px #000;
+}
+
+.card-title {
+    font-size: 40px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 20px;
+}
+
+.card-subtitle {
+    font-size: 25px;
+    text-align: center;
+}
+
+.card-list {
+    padding-left: 0;
+    list-style-position: inside;
+    font-size: 20px;
+}
+
+.link {
+    color: #C8C8C8C8;
+    text-decoration: none;
+}
+
+button {
+    border-radius: 40px;
+    background-color: #686868;
+    color: white;
+    border: none;
+    height: 28px;
+    width: 58px;
+    display: block;
+    margin: -17px auto;
+}
