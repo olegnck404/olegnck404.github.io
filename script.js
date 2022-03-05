@@ -1,9 +1,9 @@
 let switchMode = document.getElementById("switchMode");
 switchMode.onclick = function() {
     let theme = document.getElementById("theme");
-    if (theme.getAttribute("href") == "Style/light.css") {
-        theme.href = "Style/dark.css";
+    if (theme.getAttribute("href") == "light.css") {
+        theme.href = "dark.css";
     } else {
-        theme.href = "Style/light.css"
+        theme.href = "light.css"
     }
 }
