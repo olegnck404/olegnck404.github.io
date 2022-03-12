@@ -20,13 +20,13 @@ body {
 .card__block {
     width: auto;
     height: auto;
+    padding-bottom: 20px;
     margin: 40px auto;
     padding: 50px;
     background-color: white;
     border-radius: 40px;
     box-shadow: 0 10px 100px #000;
     color: black;
-    padding-bottom: 20px;
 }
 
 .card__photo {
