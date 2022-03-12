@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
+}
 body {
     margin: 0;
     background-color: #383838;
@@ -16,7 +19,7 @@ body {
 
 .card {
     width: auto;
-    height: 1500px;
+    height: 1300px;
     margin: 30px auto;
     padding: 50px;
     background-color: #1c1c1c;
@@ -68,4 +71,8 @@ button {
     width: 58px;
     display: block;
     margin: -17px auto;
+}
+.war{
+  margin-top: 150px;
+  text-align: center;
 }
