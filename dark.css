@@ -3,6 +3,7 @@
   box-sizing: border-box;
 }
 body {
+    padding: 0;
     margin: 0;
     background-color: #383838;
     font-family: 'Quicksand', sans-serif;
