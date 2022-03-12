@@ -3,32 +3,33 @@
   box-sizing: border-box;
 }
 body {
+    padding: 0;
     margin: 0;
     background-color: #1c1c1c;
-    background-image: url();
     font-family: 'Quicksand', sans-serif;
     line-height: 2;
     font-size: 20px;
     color: #fff;
 }
 
-.lol {
+.title {
     font-size: 40px;
     text-align: center;
 }
 
-.card {
+.card__block {
     width: auto;
-    height: 1300px;
+    height: auto;
     margin: 40px auto;
     padding: 50px;
     background-color: white;
     border-radius: 40px;
     box-shadow: 0 10px 100px #000;
     color: black;
+    padding-bottom: 20px;
 }
 
-.card-photo {
+.card__photo {
     display: block;
     width: 200px;
     height: 200px;
@@ -37,27 +38,27 @@ body {
     box-shadow: 0 0px 40px #000;
 }
 
-.card-title {
+.card__title {
     font-size: 40px;
     text-align: center;
 }
 
-.card-text {
+.card__text {
     font-size: 20px;
 }
 
-.card-subtitle {
+.card__subtitle {
     font-size: 25px;
     text-align: center;
 }
 
-.card-list {
+.card__list {
     padding-left: 0;
     list-style-position: inside;
     font-size: 20px;
 }
 
-.link {
+.card__link {
     color: #C8C8C8C8;
     text-decoration: none;
 }
