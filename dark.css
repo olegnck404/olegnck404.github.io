@@ -12,15 +12,16 @@ body {
     color: white;
 }
 
-.lol {
+.title {
     font-size: 40px;
     text-align: center;
 }
 
-.card {
+.card__block {
     width: auto;
-    height: 1300px;
-    margin: 30px auto;
+    height: auto;
+    padding-bottom: 20px;
+    margin: 40px auto;
     padding: 50px;
     background-color: #1c1c1c;
     border-radius: 40px;
@@ -28,7 +29,7 @@ body {
     color: white;
 }
 
-.card-photo {
+.card__photo {
     display: block;
     width: 200px;
     height: 200px;
@@ -37,27 +38,27 @@ body {
     box-shadow: 0 0px 40px #000;
 }
 
-.card-title {
+.card__title {
     font-size: 40px;
     text-align: center;
 }
 
-.card-text {
+.card__text {
     font-size: 20px;
 }
 
-.card-subtitle {
+.card__subtitle {
     font-size: 25px;
     text-align: center;
 }
 
-.card-list {
+.card__list {
     padding-left: 0;
     list-style-position: inside;
     font-size: 20px;
 }
 
-.link {
+.card__link {
     color: #C8C8C8C8;
     text-decoration: none;
 }
