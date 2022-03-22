@@ -220,4 +220,7 @@ button {
       text-align: center;
       list-style: none;
    }
+   ul{
+    font-size: 2vw;
+   }
 }
