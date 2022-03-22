@@ -150,7 +150,8 @@ button {
    .card__contact,
    .card__portfolio {
       width: 33vw;
-      height: 26vw;
+      height: auto;
+      padding-bottom: 5%;
       box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.2);
       border-radius: 26px;
       -webkit-border-radius: 26px;
