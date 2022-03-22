@@ -110,7 +110,7 @@ button {
    }
 
    .card__block {
-      background-color: #000;
+      background-color: rgb(41, 41, 41);
       border-radius: 40px;
       box-shadow: none;
       color: #fff;
