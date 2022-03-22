@@ -96,14 +96,12 @@ button {
    .hdr {
       display: flex;
       justify-content: space-between;
-      padding: 0;
       padding: 0 50px;
    }
 
    .title {
       font-weight: 700;
       font-size: 5vw;
-      margin: 0;
    }
 
    .title span {
@@ -159,7 +157,6 @@ button {
       -ms-border-radius: 26px;
       -o-border-radius: 26px;
       font-weight: 400;
-      font-size: 40px;
       text-align: center;
       padding: 0;
       color: #ffffff;
@@ -173,18 +170,13 @@ button {
    }
 
    .card__subtitle {
-      font-style: normal;
       font-weight: 700;
-      line-height: 24px;
       font-size: 2.5vw;
-
-      color: #fff;
    }
 
    .card__list {
       font-weight: 400;
       text-align: center;
-      color: #fff;
       font-size: 2vw;
 
    }
@@ -222,8 +214,6 @@ button {
       text-align: center;
       line-height: 6vw;
       font-size: 2vw;
-
-      color: #ffffff;
    }
 
    .card__portfolio-list {
@@ -232,6 +222,5 @@ button {
       text-align: center;
       list-style: none;
       font-size: 2vw;
-      color: #ffffff;
    }
 }
