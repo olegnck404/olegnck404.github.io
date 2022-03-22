@@ -12,7 +12,7 @@ body {
    font-family: 'Quicksand', sans-serif;
    line-height: 2;
    font-size: 20px;
-   color: #fff;
+   color: #000;
 }
 
 .title {
@@ -70,7 +70,7 @@ body {
 
 button {
    border-radius: 40px;
-   background-color: #383838;
+   background-color: #686868;
    color: white;
    border: none;
    height: 28px;
