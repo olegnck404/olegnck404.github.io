@@ -8,11 +8,11 @@
 body {
    padding: 0;
    margin: 0;
-   background-color: #383838;
+   background-color: #1c1c1c;
    font-family: 'Quicksand', sans-serif;
    line-height: 2;
    font-size: 20px;
-   color: white;
+   color: #fff;
 }
 
 .title {
@@ -25,10 +25,10 @@ body {
    height: auto;
    margin: 40px auto;
    padding: 50px;
-   background-color: #1c1c1c;
+   background-color: white;
    border-radius: 40px;
-   box-shadow: 0 5px 33px #000;
-   color: white;
+   box-shadow: 0 10px 100px #000;
+   color: black;
    padding-bottom: 20px;
 }
 
@@ -50,6 +50,7 @@ body {
    font-size: 20px;
 }
 
+
 .card__subtitle {
    font-size: 25px;
    text-align: center;
@@ -61,6 +62,7 @@ body {
    font-size: 20px;
 }
 
+
 .card__link {
    color: #C8C8C8C8;
    text-decoration: none;
@@ -68,7 +70,7 @@ body {
 
 button {
    border-radius: 40px;
-   background-color: #686868;
+   background-color: #383838;
    color: white;
    border: none;
    height: 28px;
@@ -82,15 +84,14 @@ button {
    text-align: center;
 }
 
-
 @media (min-width: 768px) {
 
    body {
       padding: 50px;
       margin: 0;
       font-family: 'Rubik', sans-serif;
-      color: #fff;
-      background-color: rgb(41, 41, 41);
+      color: #000;
+      background-color: #fff;
    }
 
    .hdr {
@@ -109,10 +110,10 @@ button {
    }
 
    .card__block {
-      background-color: rgb(41, 41, 41);
+      background-color: #fff;
       border-radius: 40px;
       box-shadow: none;
-      color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
       padding-bottom: 0;
       -webkit-border-radius: 40px;
       -moz-border-radius: 40px;
@@ -159,7 +160,7 @@ button {
       font-weight: 400;
       text-align: center;
       padding: 0;
-      color: #ffffff;
+      color: #000000;
       font-size: 2vw;
       line-height: 4vw;
    }
@@ -170,13 +171,18 @@ button {
    }
 
    .card__subtitle {
+      font-style: normal;
       font-weight: 700;
+      line-height: 24px;
       font-size: 2.5vw;
+
+      color: rgb(0, 0, 0);
    }
 
    .card__list {
       font-weight: 400;
       text-align: center;
+      color: rgb(0, 0, 0);
       font-size: 2vw;
 
    }
@@ -193,7 +199,7 @@ button {
       font-weight: 600;
       font-size: 1.5vw;
       line-height: 18px;
-      color: #FFFFFF;
+      color: #ffffff;
       margin: auto 0;
       width: 7vw;
       height: 3vw;
@@ -214,6 +220,8 @@ button {
       text-align: center;
       line-height: 6vw;
       font-size: 2vw;
+
+      color: #000000;
    }
 
    .card__portfolio-list {
@@ -222,5 +230,6 @@ button {
       text-align: center;
       list-style: none;
       font-size: 2vw;
+      color: #000000;
    }
 }
