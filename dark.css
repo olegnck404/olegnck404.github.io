@@ -150,7 +150,8 @@ button {
    .card__contact,
    .card__portfolio {
       width: 33vw;
-      height: 26vw;
+      height: auto;
+      padding-bottom: 5%;
       box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.2);
       border-radius: 26px;
       -webkit-border-radius: 26px;
@@ -159,7 +160,6 @@ button {
       -o-border-radius: 26px;
       font-weight: 400;
       text-align: center;
-      padding: 0;
       color: #000000;
       font-size: 2vw;
       line-height: 4vw;
@@ -171,20 +171,14 @@ button {
    }
 
    .card__subtitle {
-      font-style: normal;
       font-weight: 700;
       line-height: 24px;
       font-size: 2.5vw;
-
-      color: rgb(0, 0, 0);
    }
 
    .card__list {
       font-weight: 400;
       text-align: center;
-      color: rgb(0, 0, 0);
-      font-size: 2vw;
-
    }
 
 
@@ -219,17 +213,11 @@ button {
       font-weight: 400;
       text-align: center;
       line-height: 6vw;
-      font-size: 2vw;
-
-      color: #000000;
    }
 
    .card__portfolio-list {
-      font-style: normal;
       font-weight: 400;
       text-align: center;
       list-style: none;
-      font-size: 2vw;
-      color: #000000;
    }
 }
