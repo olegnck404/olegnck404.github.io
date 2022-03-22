@@ -8,11 +8,11 @@
 body {
    padding: 0;
    margin: 0;
-   background-color: #1c1c1c;
+   background-color: #383838;
    font-family: 'Quicksand', sans-serif;
    line-height: 2;
    font-size: 20px;
-   color: #fff;
+   color: #000;
 }
 
 .title {
@@ -25,10 +25,10 @@ body {
    height: auto;
    margin: 40px auto;
    padding: 50px;
-   background-color: white;
+   background-color: black;
    border-radius: 40px;
    box-shadow: 0 10px 100px #000;
-   color: black;
+   color: white;
    padding-bottom: 20px;
 }
 
@@ -64,7 +64,7 @@ body {
 
 
 .card__link {
-   color: #C8C8C8C8;
+   color: #C8C8C8;
    text-decoration: none;
 }
 
