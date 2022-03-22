@@ -90,8 +90,8 @@ button {
       padding: 50px;
       margin: 0;
       font-family: 'Rubik', sans-serif;
-      background-color: #fff;
       color: #000;
+      background-color: #fff;
    }
 
    .hdr {
@@ -103,7 +103,7 @@ button {
 
    .title {
       font-weight: 700;
-      font-size: 60px;
+      font-size: 5vw;
       margin: 0;
    }
 
@@ -112,10 +112,10 @@ button {
    }
 
    .card__block {
-      background-color: white;
+      background-color: #fff;
       border-radius: 40px;
       box-shadow: none;
-      color: black;
+      color: rgb(0, 0, 0);
       padding-bottom: 0;
       -webkit-border-radius: 40px;
       -moz-border-radius: 40px;
@@ -131,13 +131,13 @@ button {
 
    .card__title {
       font-weight: 600;
-      font-size: 50px;
+      font-size: 4vw;
    }
 
    .card__text {
       font-weight: 400;
-      font-size: 30px;
-      line-height: 37px;
+      font-size: 2vw;
+      line-height: 3vw;
       text-align: center;
    }
 
@@ -152,7 +152,7 @@ button {
    .card__contact,
    .card__portfolio {
       width: 33vw;
-      height: 53vh;
+      height: 26vw;
       box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.2);
       border-radius: 26px;
       -webkit-border-radius: 26px;
@@ -164,8 +164,8 @@ button {
       text-align: center;
       padding: 0;
       color: #000000;
-      font-size: 2vh;
-      line-height: 8vh;
+      font-size: 2vw;
+      line-height: 4vw;
    }
 
    .card__learning,
@@ -177,14 +177,16 @@ button {
       font-style: normal;
       font-weight: 700;
       line-height: 24px;
+      font-size: 2.5vw;
 
-      color: #000000;
+      color: rgb(0, 0, 0);
    }
 
    .card__list {
       font-weight: 400;
       text-align: center;
-      color: #000000;
+      color: rgb(0, 0, 0);
+      font-size: 2vw;
 
    }
 
@@ -198,12 +200,12 @@ button {
       background: #EC5868;
       border-radius: 50px;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 1.5vw;
       line-height: 18px;
-      color: #FFFFFF;
+      color: #ffffff;
       margin: auto 0;
-      width: 72px;
-      height: 30px;
+      width: 7vw;
+      height: 3vw;
       text-align: center;
    }
 
@@ -219,7 +221,7 @@ button {
    .contact-text {
       font-weight: 400;
       text-align: center;
-      line-height: 11vh;
+      line-height: 6vw;
       font-size: 2vw;
 
       color: #000000;
@@ -230,7 +232,7 @@ button {
       font-weight: 400;
       text-align: center;
       list-style: none;
-
+      font-size: 2vw;
       color: #000000;
    }
 }

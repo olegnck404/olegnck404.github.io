@@ -102,7 +102,7 @@ button {
 
    .title {
       font-weight: 700;
-      font-size: 60px;
+      font-size: 5vw;
       margin: 0;
    }
 
@@ -130,13 +130,13 @@ button {
 
    .card__title {
       font-weight: 600;
-      font-size: 50px;
+      font-size: 4vw;
    }
 
    .card__text {
       font-weight: 400;
-      font-size: 30px;
-      line-height: 37px;
+      font-size: 2vw;
+      line-height: 3vw;
       text-align: center;
    }
 
@@ -151,7 +151,7 @@ button {
    .card__contact,
    .card__portfolio {
       width: 33vw;
-      height: 53vh;
+      height: 26vw;
       box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.2);
       border-radius: 26px;
       -webkit-border-radius: 26px;
@@ -163,8 +163,8 @@ button {
       text-align: center;
       padding: 0;
       color: #ffffff;
-      font-size: 2vh;
-      line-height: 8vh;
+      font-size: 2vw;
+      line-height: 4vw;
    }
 
    .card__learning,
@@ -176,6 +176,7 @@ button {
       font-style: normal;
       font-weight: 700;
       line-height: 24px;
+      font-size: 2.5vw;
 
       color: #fff;
    }
@@ -184,6 +185,7 @@ button {
       font-weight: 400;
       text-align: center;
       color: #fff;
+      font-size: 2vw;
 
    }
 
@@ -197,12 +199,12 @@ button {
       background: #EC5868;
       border-radius: 50px;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 1.5vw;
       line-height: 18px;
       color: #FFFFFF;
       margin: auto 0;
-      width: 72px;
-      height: 30px;
+      width: 7vw;
+      height: 3vw;
       text-align: center;
    }
 
@@ -218,7 +220,7 @@ button {
    .contact-text {
       font-weight: 400;
       text-align: center;
-      line-height: 11vh;
+      line-height: 6vw;
       font-size: 2vw;
 
       color: #ffffff;
@@ -229,7 +231,7 @@ button {
       font-weight: 400;
       text-align: center;
       list-style: none;
-
+      font-size: 2vw;
       color: #ffffff;
    }
 }
