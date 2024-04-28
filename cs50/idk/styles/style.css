@@ -22,10 +22,10 @@
 
 .index__list_item, a{
     color: #fff;
-}
-.index__list_item, done{
-    color: rgb(49, 172, 189);
     font-size: 100%;
     margin: .7% auto;
     padding: 0 1%;
+}
+.done{
+    color: rgb(49, 172, 189);
 }
