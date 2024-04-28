@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+    background-color: #1c1c1c;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    
+}
+code{
+    font-family: monospace;
+    white-space: pre;
+}
