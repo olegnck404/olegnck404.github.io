@@ -1,224 +1,352 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
 
+:root {
+  --primary-color: #EC5868;
+  --primary-hover: #d63d4d;
+  --background-light: #ffffff;
+  --background-dark: #1c1c1c;
+  --card-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+  --font-min: 16;
+  --font-max: 20;
+  --viewport-min: 320;
+  --viewport-max: 1200;
+}
+
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-   padding: 0;
-   margin: 0;
-   background-color: #1c1c1c;
-   font-family: 'Quicksand', sans-serif;
-   line-height: 2;
-   font-size: 20px;
-   color: #fff;
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-dark);
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+  font-size: clamp(1rem, calc(0.875rem + 0.5vw), 1.25rem);
+  color: #fff;
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+.hdr {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
 }
 
 .title {
-   font-size: 40px;
-   text-align: center;
-}
-
-.card__block {
-   width: auto;
-   height: auto;
-   margin: 40px auto;
-   padding: 50px;
-   background-color: white;
-   border-radius: 40px;
-   box-shadow: 0 10px 100px #000;
-   color: black;
-   padding-bottom: 20px;
-}
-
-.card__photo {
-   display: block;
-   width: 200px;
-   height: 200px;
-   margin: 0 auto;
-   border-radius: 50%;
-   box-shadow: 0 0px 40px #000;
-}
-
-.card__title {
-   font-size: 40px;
-   text-align: center;
-}
-
-.card__text {
-   font-size: 20px;
-}
-
-
-.card__subtitle {
-   font-size: 25px;
-   text-align: center;
-}
-
-.card__list {
-   padding-left: 0;
-   list-style-position: inside;
-   font-size: 20px;
-}
-
-
-.card__link {
-   color: #C8C8C8C8;
-   text-decoration: none;
+  font-size: clamp(2rem, calc(1.5rem + 2vw), 3.5rem);
+  text-align: center;
+  margin: 0;
+  animation: fadeInDown 1s ease-in-out;
 }
 
 button {
-   border-radius: 40px;
-   background-color: #383838;
-   color: white;
-   border: none;
-   height: 28px;
-   width: 58px;
-   display: block;
-   margin: -17px auto;
+   position: relative;
+   border-radius: 12px;
+   padding: 0.75rem 1.5rem;
+   background-color: transparent;
+   color: var(--text-color);
+   border: 2px solid var(--primary-color);
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   font-size: clamp(0.875rem, calc(0.75rem + 0.5vw), 1rem);
+   font-weight: 600;
+   overflow: hidden;
+   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+   z-index: 1;
+ }
+ 
+ button::before {
+   content: '🌙';
+   font-size: 1.2em;
+   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ 
+ button::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: var(--primary-color);
+   transform: scaleX(0);
+   transform-origin: right;
+   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+   z-index: -1;
+ }
+ 
+ button:hover {
+   color: var(--text-color);
+   border-color: var(--primary-hover);
+   box-shadow: 0 5px 15px rgba(236, 88, 104, 0.2);
+ }
+ 
+ button:hover::before {
+   transform: rotate(360deg);
+ }
+ 
+ button:hover::after {
+   transform: scaleX(1);
+   transform-origin: left;
+ }
+ 
+ button:active {
+   transform: scale(0.95);
+ }
+ 
+ /* [Rest of the CSS remains the same] */
+.card__block {
+  width: 90%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--background-light);
+  border-radius: 24px;
+  box-shadow: var(--card-shadow);
+  color: black;
+  animation: slideUp 1s ease-in-out;
+  overflow: hidden;
+}
+
+.card__photo {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(236, 88, 104, 0.2);
+  transition: transform var(--transition-speed) ease;
+}
+
+.card__photo:hover {
+  transform: scale(1.05);
+}
+
+.card__title {
+  font-size: clamp(1.75rem, calc(1.5rem + 1vw), 2.5rem);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.card__text {
+  font-size: clamp(0.875rem, calc(0.75rem + 0.5vw), 1.125rem);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 1.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.desc_1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.card__learning,
+.card__contact,
+.card__portfolio {
+  background-color: rgba(248, 248, 248, 0.8);
+  padding: 2rem;
+  border-radius: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.card__learning::before,
+.card__contact::before,
+.card__portfolio::before {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+  text-align: center;
+}
+
+.card__learning::before {
+  content: '📚';
+}
+
+.card__contact::before {
+  content: '📫';
+}
+
+.card__portfolio::before {
+  content: '💼';
+}
+
+.card__learning:hover,
+.card__contact:hover,
+.card__portfolio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card__subtitle {
+  font-size: clamp(1.25rem, calc(1rem + 1vw), 1.75rem);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.card__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: clamp(0.875rem, calc(0.75rem + 0.5vw), 1rem);
+  text-align: center;
+}
+
+.card__list li {
+  margin-bottom: 1rem;
+  transition: transform var(--transition-speed) ease;
+}
+
+.card__link {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all var(--transition-speed) ease;
+  position: relative;
+  padding: 0.25rem 0;
 }
 
 .war {
-   margin-top: 150px;
-   text-align: center;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: clamp(1rem, calc(0.875rem + 0.5vw), 1.25rem);
+  animation: pulse 2s infinite;
+}
+
+.contact-text {
+  line-height: 2.2;
 }
 
 @media (min-width: 768px) {
+  body {
+    padding: 2rem;
+    font-family: 'Rubik', sans-serif;
+    color: #000;
+    background-color: var(--background-light);
+  }
 
-   body {
-      padding: 50px;
-      margin: 0;
-      font-family: 'Rubik', sans-serif;
-      color: #000;
-      background-color: #fff;
-   }
+  .hdr {
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+  }
 
-   .hdr {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 50px;
-   }
+  .title {
+    font-weight: 700;
+  }
 
-   .title {
-      font-weight: 700;
-      font-size: 5vw;
-   }
+  .title span {
+    color: var(--primary-color);
+    position: relative;
+  }
 
-   .title span {
-      color: #EC5868;
-   }
+  .title span:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform var(--transition-speed) ease;
+  }
 
-   .card__block {
-      background-color: #fff;
-      border-radius: 40px;
-      box-shadow: none;
-      color: rgb(0, 0, 0);
-      padding-bottom: 0;
-      -webkit-border-radius: 40px;
-      -moz-border-radius: 40px;
-      -ms-border-radius: 40px;
-      -o-border-radius: 40px;
-      margin-top: 0;
-      padding-top: 15px;
-   }
+  .title:hover span:after {
+    transform: scaleX(1);
+  }
 
-   .card__photo {
-      display: none;
-   }
+  .card__block {
+    padding: 3rem;
+  }
 
-   .card__title {
-      font-weight: 600;
-      font-size: 4vw;
-   }
+  .desc_1 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
 
-   .card__text {
-      font-weight: 400;
-      font-size: 2vw;
-      line-height: 3vw;
-      text-align: center;
-   }
+@media (max-width: 768px) {
+  .hdr {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
 
-   .desc_1 {
-      margin-top: 110px;
-      display: flex;
-      justify-content: space-around;
+  button {
+    padding: 0.5rem 1rem;
+  }
 
-   }
+  .card__subtitle::before {
+    font-size: 1.5rem;
+  }
+}
 
-   .card__learning,
-   .card__contact,
-   .card__portfolio {
-      width: 33vw;
-      height: auto;
-      padding-bottom: 5%;
-      box-shadow: 0px 7px 30px rgba(0, 0, 0, 0.2);
-      border-radius: 26px;
-      -webkit-border-radius: 26px;
-      -moz-border-radius: 26px;
-      -ms-border-radius: 26px;
-      -o-border-radius: 26px;
-      font-weight: 400;
-      text-align: center;
-      color: #000000;
-      font-size: 2vw;
-      line-height: 4vw;
-   }
+@media (max-width: 480px) {
+  .card__block {
+    padding: 1.5rem;
+  }
+}
 
-   .card__learning,
-   .card__portfolio {
-      margin-right: 5%;
-   }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
-   .card__subtitle {
-      font-weight: 700;
-      line-height: 24px;
-      font-size: 2.5vw;
-   }
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-   .card__list {
-      font-weight: 400;
-      text-align: center;
-      font-size: 2vw;
-   }
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
 
-   .card__link {
-      color: #EC5868;
-      text-decoration: none;
-   }
-
-   button {
-      background: #EC5868;
-      border-radius: 50px;
-      font-weight: 600;
-      font-size: 1.5vw;
-      line-height: 18px;
-      color: #ffffff;
-      margin: auto 0;
-      width: 7vw;
-      height: 3vw;
-      text-align: center;
-   }
-
-   .war {
-      margin-top: 150px;
-      text-align: center;
-   }
-
-   #html {
-      list-style: none;
-   }
-
-   .contact-text {
-      font-weight: 400;
-      text-align: center;
-      line-height: 6vw;
-   }
-
-   .card__portfolio-list {
-      font-weight: 400;
-      text-align: center;
-      list-style: none;
-   }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
