@@ -442,6 +442,14 @@ body {
 .contact {
     padding: 8rem 2rem;
     background: var(--gradient-2);
+    width: 100%;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
 }
 
 .contact-grid {
@@ -449,6 +457,8 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .contact-card {
