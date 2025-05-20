@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# 🌐 Personal Portfolio Website
 
 Welcome to my personal portfolio website, designed to showcase my projects, skills, and experience as a frontend developer. The site is built using HTML, SCSS, and JavaScript, and is hosted via GitHub Pages.
 
