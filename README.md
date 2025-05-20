@@ -27,7 +27,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/olegnck404/olegnck404.github.io.git
 cd olegnck404.github.io
-
+```
 
 Open index.html in your browser or serve locally using any static server.
 
