@@ -45,13 +45,13 @@ Open index.html in your browser or serve locally using any static server.
 
 └── README.md
 
-🧠 Author
+## 🧠 Author
 
 Oleh Dyadechko
 Frontend Developer | Sales Manager | Tech Enthusiast
 GitHub Profile • Telegram
 
-🌐 Live Demo
+## 🌐 Live Demo
 
-Check it out live: olegnck404.github.io
+Check it out live: [olegnck404.github.io]
 
