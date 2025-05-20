@@ -34,10 +34,15 @@ Open index.html in your browser or serve locally using any static server.
 📁 Folder Structure
 
 ├── assets/         # Icons, images
+
 ├── css/            # Compiled styles
+
 ├── scss/           # SCSS source files
+
 ├── js/             # JavaScript files
+
 ├── index.html      # Main page
+
 └── README.md
 
 🧠 Author
