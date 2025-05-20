@@ -53,5 +53,5 @@ GitHub Profile • Telegram
 
 ## 🌐 Live Demo
 
-Check it out live: [olegnck404.github.io]
+Check it out live: [olegnck404.github.io](olegnck404.github.io)
 
