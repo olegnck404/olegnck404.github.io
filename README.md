@@ -50,5 +50,3 @@ GitHub Profile • Telegram
 
 Check it out live: olegnck404.github.io
 
-Теперь всё будет корректно и красиво отображаться на GitHub. Хочешь, могу также сделать адаптацию под стеклянный стиль (glassmorphism) или рефакторинг проекта.
-
