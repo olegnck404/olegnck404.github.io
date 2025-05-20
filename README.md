@@ -1,57 +1,55 @@
+# Personal Portfolio Website
 
-# 🌐 Personal Portfolio Website
-
-This is my personal portfolio website built to showcase my projects, skills, and experience as a frontend developer. The website is built with **HTML**, **SCSS**, and **JavaScript**, and is deployed via GitHub Pages.
-
-![Preview](https://raw.githubusercontent.com/olegnck404/olegnck404.github.io/main/preview.png)
-
-## 🧑‍💻 Features
-
-- Responsive layout for desktop and mobile  
-- Smooth scrolling and section transitions  
-- Interactive project section with GitHub links  
-- Clean, minimalistic UI with modern aesthetics  
-- Hosted on GitHub Pages  
-
-## ⚙️ Tech Stack
-
-- **HTML5** + **SCSS**  
-- **JavaScript (ES6)**  
-- **Font Awesome** for icons  
-- **GitHub Pages** for deployment  
-
-## 🚀 Getting Started
-
-Clone the repository:
-
-```bash
-git clone https://github.com/olegnck404/olegnck404.github.io.git
-cd olegnck404.github.io
-```
-
-Open index.html in your browser or serve locally using any static server.
-
-📁 Folder Structure
-
-├── assets/         # Icons, images
-
-├── css/            # Compiled styles
-
-├── scss/           # SCSS source files
-
-├── js/             # JavaScript files
-
-├── index.html      # Main page
-
-└── README.md
-
-## 🧠 Author
-
-Oleh Dyadechko
-Frontend Developer | Sales Manager | Tech Enthusiast
-GitHub Profile • Telegram
+Welcome to my personal portfolio website, designed to showcase my projects, skills, and experience as a frontend developer. The site is built using HTML, SCSS, and JavaScript, and is hosted via GitHub Pages.
 
 ## 🌐 Live Demo
 
-Check it out live: [olegnck404.github.io](olegnck404.github.io)
+Explore the live version here: [olegnck404.github.io](https://olegnck404.github.io/)
 
+## ✨ Features
+
+- **Responsive Design**: Optimized for both desktop and mobile devices.
+- **Smooth Navigation**: Seamless scrolling and section transitions.
+- **Project Showcase**: Interactive sections with links to GitHub repositories.
+- **Modern Aesthetics**: Clean and minimalistic user interface.
+- **Easy Deployment**: Hosted effortlessly on GitHub Pages.
+
+## 🛠️ Tech Stack
+
+- **Frontend**: HTML5, SCSS, JavaScript (ES6)
+- **Icons**: Font Awesome
+- **Deployment**: GitHub Pages
+
+## 🚀 Getting Started
+
+To set up the project locally:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/olegnck404/olegnck404.github.io
+   ```
+
+2. **Navigate to the project directory**:
+
+   ```bash
+   cd olegnck404.github.io
+   ```
+
+3. **Open `index.html` in your preferred browser** to view the site.
+
+## 📁 Project Structure
+
+```
+├── index.html             # Main HTML file
+├── script.js              # JavaScript functionalities
+├── light.css              # Light theme styles
+├── dark.css               # Dark theme styles
+├── bootstrap-reboot.css   # CSS reset
+├── favicon.ico            # Website icon
+└── README.md              # Project documentation
+```
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
