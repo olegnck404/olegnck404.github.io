@@ -1,0 +1,160 @@
+/* Общие стили для всех тем. Использовать только БЭМ-классы! */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  line-height: 1.6;
+  font-size: clamp(1rem, calc(0.875rem + 0.5vw), 1.25rem);
+  transition: all var(--transition-speed, 0.3s) ease-in-out;
+}
+
+.page__header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.page__title {
+  font-size: clamp(2rem, calc(1.5rem + 2vw), 3.5rem);
+  text-align: center;
+  margin: 0;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.button {
+  position: relative;
+  border-radius: 12px;
+  padding: 0.75rem 1.5rem;
+  background-color: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(0.875rem, calc(0.75rem + 0.5vw), 1rem);
+  font-weight: 600;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.button::before {
+  content: '\1F319';
+  font-size: 1.2em;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color, #EC5868);
+  opacity: 0.1;
+  z-index: -1;
+  transition: opacity 0.4s;
+}
+
+/* БЭМ-структура карточки */
+.card {
+  box-shadow: var(--card-shadow);
+  border-radius: 24px;
+  background: var(--card-bg, #fff);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card__desc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.card__contact-text {
+  line-height: 2.2;
+}
+
+.card__war {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: clamp(1rem, calc(0.875rem + 0.5vw), 1.25rem);
+  animation: pulse 2s infinite;
+}
+
+.skill-indicator {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rainbow-mode {
+  animation: rainbow-bg 2s linear infinite;
+}
+
+@keyframes rainbow-bg {
+  0% {
+    background: #ff5e62;
+  }
+
+  20% {
+    background: #ff9966;
+  }
+
+  40% {
+    background: #f9d423;
+  }
+
+  60% {
+    background: #a1ffce;
+  }
+
+  80% {
+    background: #38f9d7;
+  }
+
+  100% {
+    background: #ff5e62;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

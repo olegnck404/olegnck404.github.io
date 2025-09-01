@@ -1,89 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="4fWzYoLE6wLEbWc63FJfe3aUStuzif3n0cmiPHIBUHk" />
-    <meta name="description" content="Full Stack Developer Portfolio - Oleh Dyadechko from Ukraine">
-    <meta property="og:title" content="Oleh Dyadechko - Full Stack Developer">
-    <meta property="og:description" content="Portfolio website of Oleh Dyadechko - Full Stack Developer from Ukraine with 1.5 years experience">
-    <meta property="og:image" content="file_0000000098c4620abb60f6e9056a07ac.png">
-    <meta property="og:url" content="https://olegnck404.github.io/">
-    <meta name="twitter:card" content="summary_large_image">
-    <link rel="preload" href="light.css" as="style">
-    <link rel="preload" href="dark.css" as="style">
-    <link rel="stylesheet" type="text/css" href="light.css" id="theme" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <title>Oleh Dyadechko - Full Stack Developer</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="4fWzYoLE6wLEbWc63FJfe3aUStuzif3n0cmiPHIBUHk" />
+  <meta name="description" content="Full Stack Developer Portfolio - Oleh Dyadechko from Ukraine">
+  <meta property="og:title" content="Oleh Dyadechko - Full Stack Developer">
+  <meta property="og:description"
+    content="Portfolio website of Oleh Dyadechko - Full Stack Developer from Ukraine with 1.5 years experience">
+  <meta property="og:image" content="file_0000000098c4620abb60f6e9056a07ac.png">
+  <meta property="og:url" content="https://olegnck404.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preload" href="common.css" as="style">
+  <link rel="preload" href="light.css" as="style">
+  <link rel="preload" href="dark.css" as="style">
+  <link rel="stylesheet" type="text/css" href="common.css" />
+  <link rel="stylesheet" type="text/css" href="light.css" id="theme" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <body>
-    <header class="hdr">
-      <h1 class="title">This is a <span>site.</span></h1>
-      <button id="switchMode">Theme</button>
-    </header>
-    <div class="wrapper">
-      <div class="card__block">
-        <img
-          class="card__photo"
-          src="file_0000000098c4620abb60f6e9056a07ac.png"
-          alt="Oleh Dyadechko"
-        />
-        <section class="card__about">
-          <h2 class="card__title">About me</h2>
-          <div class="card__text">Hello, I'm Oleh Dyadechko - 19 y.o. Full Stack Developer from Poltava (Ukraine). 
-            I have Junior Bachelor in Software Engineering and 1.5 years of experience in web development. I'm passionate about building web applications with React & TypeScript.
-            My main devices are Google Pixel 7a and Apple MacBook Air M1 2020.
-            On social media you can find me under these nicknames: Olegnck/Olegxck. #teampixel</div>
+  <title>Oleh Dyadechko - Full Stack Developer</title>
+</head>
+
+<body>
+  <header class="page__header">
+    <h1 class="page__title">This is a <span>site.</span></h1>
+    <button id="switchMode" class="button">Theme</button>
+  </header>
+  <div class="wrapper">
+    <div class="card__block">
+      <img class="card__photo" src="file_0000000098c4620abb60f6e9056a07ac.png" alt="Oleh Dyadechko" />
+      <section class="card__about">
+        <h2 class="card__title">About me</h2>
+        <div class="card__text">Hello, I'm Oleh Dyadechko - 19 y.o. Full Stack Developer from Poltava (Ukraine).
+          I have Junior Bachelor in Software Engineering and 1.5 years of experience in web development. I'm passionate
+          about building web applications with React & TypeScript.
+          My main devices are Google Pixel 7a and Apple MacBook Air M1 2020.
+          On social media you can find me under these nicknames: Olegnck/Olegxck. #teampixel</div>
+      </section>
+      <div class="card__desc">
+        <section class="card__learning">
+          <h2 class="card__subtitle">Tech Stack</h2>
+          <ul class="card__list" id="html">
+            <li>TypeScript & React</li>
+            <li>Vite & Tailwind CSS</li>
+            <li>Python</li>
+            <li>SQL & Docker</li>
+            <li>Git & Linux</li>
+          </ul>
         </section>
-        <div class="desc_1">
-          <section class="card__learning">
-            <h2 class="card__subtitle">Tech Stack</h2>
-            <ul class="card__list" id="html">
-              <li>TypeScript & React</li>
-              <li>Vite & Tailwind CSS</li>
-              <li>Python</li>
-              <li>SQL & Docker</li>
-              <li>Git & Linux</li>
-            </ul>
-          </section>
-
-          <section class="card__portfolio">
-            <h2 class="card__subtitle">My projects</h2>
-            <ul class="card__portfolio-list card__list">
-              <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/mao-admin-panel">MAO Admin Panel</a></li>
-              <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/OfferHunter">OfferHunter CLI</a></li>
-              <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/shopBot">Shop Telegram Bot</a></li>
-              <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/telegram-bot-Python">Redmi Note 5 Bot</a></li>
-              <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/SnakeGame">Snake Game C++</a></li>
-              <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/DyadechkoPractic">OOP Practice Java</a></li>
-            </ul>
-          </section>
-          <section class="card__contact">
-            <h2 class="card__subtitle">Contact me</h2>
-            <div class="card__text contact-text">
-              E-Mail:
-              <a class="card__link" target="_blank" href="mailto:olegdadecko1@gmail.com">click</a>
-            </div>
-            <div class="card__text contact-text">
-              Telegram:
-              <a class="card__link" target="_blank" href="https://t.me/olegnck">click</a>
-            </div>
-            <div class="card__text contact-text">
-              My GitHub:
-              <a class="card__link" target="_blank" href="https://github.com/olegnck404/">click</a>
-            </div>
-            <div class="card__text contact-text">
-              LinkedIn:
-              <a class="card__link" target="_blank" href="https://www.linkedin.com/in/oleh-diadechko-15b740259">click</a>
-            </div>
-          </section>
-        </div>
-        <p class="card__text war">#StopWarInUkraine</p>
+        <section class="card__portfolio">
+          <h2 class="card__subtitle">My projects</h2>
+          <ul class="card__portfolio-list card__list">
+            <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/mao-admin-panel">MAO Admin
+                Panel</a></li>
+            <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/OfferHunter">OfferHunter
+                CLI</a></li>
+            <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/shopBot">Shop Telegram Bot</a>
+            </li>
+            <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/telegram-bot-Python">Redmi
+                Note 5 Bot</a></li>
+            <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/SnakeGame">Snake Game C++</a>
+            </li>
+            <li><a class="card__link" target="_blank" href="https://github.com/olegnck404/DyadechkoPractic">OOP Practice
+                Java</a></li>
+          </ul>
+        </section>
+        <section class="card__contact">
+          <h2 class="card__subtitle">Contact me</h2>
+          <div class="card__text card__contact-text">
+            E-Mail:
+            <a class="card__link" target="_blank" href="mailto:olegdadecko1@gmail.com">click</a>
+          </div>
+          <div class="card__text card__contact-text">
+            Telegram:
+            <a class="card__link" target="_blank" href="https://t.me/olegnck">click</a>
+          </div>
+          <div class="card__text card__contact-text">
+            My GitHub:
+            <a class="card__link" target="_blank" href="https://github.com/olegnck404/">click</a>
+          </div>
+          <div class="card__text card__contact-text">
+            LinkedIn:
+            <a class="card__link" target="_blank" href="https://www.linkedin.com/in/oleh-diadechko-15b740259">click</a>
+          </div>
+        </section>
       </div>
+      <p class="card__text card__war">#StopWarInUkraine</p>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>
