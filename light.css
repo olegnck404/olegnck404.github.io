@@ -4,7 +4,6 @@
 :root {
   --primary-color: #EC5868;
   --primary-hover: #d63d4d;
-  --background-light: #ffffff;
   --background-dark: #1c1c1c;
   --card-bg: #fff;
   --text-color: #222;
@@ -22,11 +21,9 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: var(--background-light);
   font-family: 'Quicksand', sans-serif;
   line-height: 1.6;
   font-size: clamp(1rem, calc(0.875rem + 0.5vw), 1.25rem);
-  color: var(--text-color);
   transition: all var(--transition-speed) ease-in-out;
 }
 
@@ -38,13 +35,6 @@ body {
   align-items: center;
   padding: 1.5rem 2rem;
   margin-bottom: 2rem;
-}
-
-.title {
-  font-size: clamp(2rem, calc(1.5rem + 2vw), 3.5rem);
-  text-align: center;
-  margin: 0;
-  animation: fadeInDown 1s ease-in-out;
 }
 
 button {
@@ -235,8 +225,6 @@ button:active {
   body {
     padding: 2rem;
     font-family: 'Rubik', sans-serif;
-    color: #000;
-    background-color: var(--background-light);
   }
 
   .hdr {
@@ -246,11 +234,6 @@ button:active {
 
   .title {
     font-weight: 700;
-  }
-
-  .title span {
-    color: var(--primary-color);
-    position: relative;
   }
 
   .title span:after {

@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
   font-size: clamp(1rem, calc(0.875rem + 0.5vw), 1.25rem);
   transition: all var(--transition-speed, 0.3s) ease-in-out;
+  background: var(--background-dark);
 }
 
 .page__header {
@@ -30,6 +31,11 @@ body {
   text-align: center;
   margin: 0;
   animation: fadeInDown 1s ease-in-out;
+  color: #fff !important;
+}
+
+.page__title span {
+  color: var(--primary-color) !important;
 }
 
 .button {
@@ -37,7 +43,7 @@ body {
   border-radius: 12px;
   padding: 0.75rem 1.5rem;
   background-color: transparent;
-  color: var(--text-color);
+  color: var(--primary-color) !important;
   border: 2px solid var(--primary-color);
   cursor: pointer;
   display: flex;
@@ -48,6 +54,18 @@ body {
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
+}
+
+.button:hover,
+.button:focus {
+  color: #fff !important;
+  background: var(--primary-color);
+  border-color: var(--primary-hover);
+}
+
+.button:active {
+  color: #fff !important;
+  background: var(--primary-hover);
 }
 
 .button::before {
